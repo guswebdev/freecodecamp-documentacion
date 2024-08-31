@@ -35,12 +35,12 @@
         <a href="#function-declarations">Function declarations</a>
         <a href="#reference">Reference</a>
       </nav>
-      <article class="btns-menu">
+      <article class="btns-menu" data-btns>
         <a href="#menu">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" data-abrir></i>
         </a>
         <a href="#cerrar-menu">
-          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark d-none" data-cerrar></i>
         </a>
       </article>
     </header>
@@ -514,17 +514,6 @@
         </section>
       </div>
     </main>
-    <script>
-      function greetMe(yourName) {
-        alert("Hello " + yourName);
-
-      }
-      //greetMe("World");
-
-      var x = 42;
-      var si = true;
-
-      const MY_OBJECT = {"key": "value"};
-    </script>
+    <script src="script.js" defer></script>
   </body>
 </html>

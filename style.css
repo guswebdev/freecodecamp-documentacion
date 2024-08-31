@@ -110,7 +110,7 @@ header {
 .btns-menu {
     width: 2rem;
     height: 2rem;
-    /*background-color: blueviolet;*/
+    
     position: relative;
     display: flex;
     justify-content: center;
@@ -120,13 +120,6 @@ header {
 .btns-menu a{
     position: absolute;
     color: #222;
-}
-
-.btns-menu i.fa-bars{
-    display: block;
-}
-.btns-menu i.fa-xmark{
-    display: none;
 }
 
 .declaration {
@@ -163,6 +156,10 @@ header {
 
 .referece-link {
     display: inline-block;
+}
+
+.d-none {
+    display: none; 
 }
 
 @media screen and (min-width: 1024px){
