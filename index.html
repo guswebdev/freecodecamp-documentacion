@@ -253,7 +253,8 @@
             and can contain alphabetic, numeric, or underscore characters.
           </p>
           <code>
-            <pre>const PI = 3.14;</pre>
+            <pre>
+<span class="declaration">const</span> <span class="variable">PI</span> <span class="operator">=</span> <span class="number">3.14</span><span class="operator">;</span></pre>
           </code>
           <p>
             A constant cannot change value through assignment or be re-declared
@@ -269,19 +270,17 @@
             variable in the same scope. For example:
           </p>
           <code>
-            <pre>
-// THIS WILL CAUSE AN ERROR
-function f() {}; 
+<pre>
+<span class="comment">// THIS WILL CAUSE AN ERROR</span>
+<span class="declaration">function</span> <span class="function">f</span> <span class="operator">(</span><span class="operator">) {</span><span class="operator">}</span><span class="operator">;</span>
+<span class="declaration">const</span> <span class="variable">f</span> <span class="operator">=</span> <span class="number">5</span><span class="operator">;</span>
 
-const f = 5;
-// THIS WILL CAUSE AN ERROR ALSO
-
-function f() {
-  const g = 5;
-  var g; 
-  //statements 
-}</pre
-            >
+<span class="comment">// THIS WILL CAUSE AN ERROR ALSO</span>
+<span class="declaration">function</span> <span class="function">f</span> <span class="operator">(</span><span class="operator">) {</span>
+  <span class="declaration">const</span> <span class="variable">g</span> <span class="operator">=</span> <span class="number">5</span><span class="operator">;</span>
+  <span class="declaration">var</span> <span class="variable">g</span><span class="operator">;</span>
+  <span class="comment">// statements</span>
+<span class="operator">}</span><span class="operator">;</span></pre>
           </code>
           <p>
             However, object attributes are not protected, so the following
@@ -289,9 +288,8 @@ function f() {
           </p>
           <code>
             <pre>
-const MY_OBJECT = {"key": "value"}; 
-MY_OBJECT.key = "otherValue";</pre
-            >
+<span class="declaration">const</span> <span class="variable">MY_OBJECT</span> <span class="operator">= {</span><span class="string">"key"</span><span class="operator">: </span><span class="string">"value"</span><span class="operator">};</span>
+<span class="variable">MY_OBJECT</span><span class="operator">.</span><span class="function">key</span> <span class="operator">= </span><span class="string">"otherValue"</span><span class="operator">;</span></pre>
           </code>
         </section>
         <section id="data-types">
@@ -533,6 +531,8 @@ function square(number) {
 
       var x = 42;
       var si = true;
+
+      const MY_OBJECT = {"key": "value"};
     </script>
   </body>
 </html>
