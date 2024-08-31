@@ -335,12 +335,11 @@
           </p>
           <code>
             <pre>
-if (condition) { 
-  statement_1;
-} else {
-  statement_2;
-}</pre
-            >
+<span class="statement">if</span> <span class="operator">(</span><span class="declaration">condition</span><span class="operator">) {</span>
+  <span class="variable">statement_1</span><span class="operator">;</span> 
+<span class="operator">}</span> <span class="statement">else</span> <span class="operator">{</span>
+  <span class="variable">statement_2</span><span class="operator">;</span> 
+<span class="operator">}</span></pre>
           </code>
           <p>
             condition can be any expression that evaluates to true or false. See
@@ -355,16 +354,15 @@ if (condition) {
           </p>
           <code>
             <pre>
-if (condition_1) {
-  statement_1;
-} else if (condition_2) {
-  statement_2;
-} else if (condition_n) {
-  statement_n;
-} else {
-  statement_last;
-}</pre
-            >
+<span class="statement">if</span> <span class="operator">(</span><span class="declaration">condition_1</span><span class="operator">) {</span>
+  <span class="variable">statement_1</span><span class="operator">;</span> 
+<span class="operator">}</span> <span class="statement">else if</span> <span class="operator">(</span><span class="declaration">condition_2</span><span class="operator">) {</span>
+  <span class="variable">statement_2</span><span class="operator">;</span> 
+<span class="operator">}</span> <span class="statement">else if</span> <span class="operator">(</span><span class="declaration">condition_n</span><span class="operator">) {</span>
+  <span class="variable">statement_n</span><span class="operator">;</span> 
+<span class="operator">}</span> <span class="statement">else</span> <span class="operator">{</span>
+  <span class="variable">statement_last</span><span class="operator">;</span> 
+<span class="operator">}</span></pre>
           </code>
           <p>
             In the case of multiple conditions only the first logical condition
@@ -375,14 +373,13 @@ if (condition_1) {
           </p>
           <code>
             <pre>
-if (condition) {
-  statement_1_if_condition_is_true;
-  statement_2_if_condition_is_true;
-} else {
-  statement_3_if_condition_is_false;
-  statement_4_if_condition_is_false;
-}</pre
-            >
+<span class="statement">if</span> <span class="operator">(</span><span class="declaration">condition</span><span class="operator">) {</span>
+  <span class="variable">statement_1_if_condition_is_true</span><span class="operator">;</span> 
+  <span class="variable">statement_2_if_condition_is_true</span><span class="operator">;</span> 
+<span class="operator">}</span> <span class="statement">else</span> <span class="operator">{</span>
+  <span class="variable">statement_3_if_condition_is_false</span><span class="operator">;</span> 
+  <span class="variable">statement_4_if_condition_is_false</span><span class="operator">;</span> 
+<span class="operator">}</span></pre>
           </code>
           <p>
             It is advisable to not use simple assignments in a conditional
@@ -392,10 +389,9 @@ if (condition) {
           </p>
           <code>
             <pre>
-if (x = y) {
-  /* statements here */
-}</pre
-            >
+<span class="statement">if</span> <span class="operator">(</span><span class="declaration">x <span class="operator">=</span> y</span><span class="operator">) {</span>
+  <span class="comment">/* statements here */</span> 
+<span class="operator">}</span></pre>
           </code>
           <p>
             If you need to use an assignment in a conditional expression, a
@@ -404,10 +400,9 @@ if (x = y) {
           </p>
           <code>
             <pre>
-if ((x = y)) {
-  /* statements here */
-}</pre
-            >
+<span class="statement">if</span> <span class="operator">(</span><span class="operator">(</span><span class="declaration">x <span class="operator">=</span> y</span><span class="operator">)</span><span class="operator">) {</span>
+  <span class="comment">/* statements here */</span> 
+<span class="operator">}</span></pre>
           </code>
         </section>
         <section id="while">
@@ -418,10 +413,9 @@ if ((x = y)) {
           </p>
           <code>
             <pre>
-while (condition) {
-  statement
-}</pre
-            >
+<span class="statement">while</span> <span class="operator">(</span><span class="declaration">condition</span><span class="operator">) {</span>
+  <span class="variable">statements</span><span class="operator">;</span> 
+<span class="operator">}</span></pre>
           </code>
           <p>
             If the condition becomes false, statement within the loop stops
@@ -443,13 +437,12 @@ while (condition) {
           </p>
           <code>
             <pre>
-var n = 0;
-var x = 0;
-while (n < 3) {
-  n++;
-  x += n;
-}</pre
-            >
+<span class="declaration">var</span> <span class="variable">n</span> <span class="operator">=</span> <span class="number">0</span><span class="operator">;</span>
+<span class="declaration">var</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">0</span><span class="operator">;</span>
+<span class="statement">while</span> <span class="operator">(</span><span class="declaration">n <span class="operator"><</span> 3</span><span class="operator">) {</span>
+  <span class="variable">n<span class="operator">++</span></span><span class="operator">;</span> 
+  <span class="variable">x <span class="operator">+=</span> n</span><span class="operator">;</span> 
+<span class="operator">}</span></pre>
           </code>
           <p>
             With each iteration, the loop increments n and adds that value to x.
@@ -488,10 +481,9 @@ while (n < 3) {
           </p>
           <code>
             <pre>
-function square(number) {
-  return number * number;
-}</pre
-            >
+<span class="declaration">function</span> <span class="function">square</span> <span class="operator">(</span><span class="variable">number</span><span class="operator">) {</span>
+  <span class="statement">return</span> <span class="variable">number <span class="operator">*</span> number</span><span class="operator">;</span>
+<span class="operator">}</span></pre>
           </code>
           <p>
             The function square takes one argument, called number. The function
@@ -500,7 +492,7 @@ function square(number) {
             statement specifies the value returned by the function.
           </p>
           <code>
-            <pre>return number * number;</pre>
+            <pre><span class="statement">return</span> <span class="variable">number <span class="operator">*</span> number</span><span class="operator">;</span></pre>
           </code>
           <p>
             Primitive parameters (such as a number) are passed to functions by
@@ -515,7 +507,7 @@ function square(number) {
             <li>
               <p>
                 All the documentation in this page is taken from
-                <span><a href="#">MDN</a></span>
+                <span class="referece-link"><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noopener">MDN</a></span>
               </p>
             </li>
           </ul>
